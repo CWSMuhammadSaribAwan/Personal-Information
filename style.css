@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: black;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+}
+body {
+  font-family: "Asap", sans-serif;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+  color: deeppink;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  /*
+  filter: blur(2px) contrast(2) blur(1px);
+  mix-blend-mode: lighten;
+*/
+}
+h1,
+h2 {
+  position: relative;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 1;
+}
